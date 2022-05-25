@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', Georgia, serif;
+    background-color: #d1d2ff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 100px 500px 800px 200px;
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "feat feat feat feat feat feat feat feat"
+      "main main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+}
+
+.header {
+    grid-area: hd;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    border-bottom: 5px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d1f7ff;
+}
+
+#logo img {
+    height: 100px;
+    width: 150px;
+    overflow: hidden;
+    display: flex;
+    align-content: flex-end;
+}
+
+#navbar {
+    margin-right: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+#navbar li {
+    display: inline;
+    list-style: none;
+    margin: 0.5em;
+}
+
+header a:link {
+    text-decoration: none;
+    color: Black;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: #8688f9;
+}
+
+.feature {
+    grid-area: feat;
+    background-image: url("bookshelf.jpg");
+}
+
+.feature .intro {
+    Border: 5px solid cyan;
+    text-align: center;
+    height: 250px;
+    width: 50%;
+    
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+
+
+
