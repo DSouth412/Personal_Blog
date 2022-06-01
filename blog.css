@@ -15,8 +15,8 @@ body {
       grid-template-areas: 
       "hd   hd   hd   hd"
       "banr banr banr banr"
-      "main main main main"
       "feat feat feat feat"
+      "main main main main"
       "ft   ft   ft   ft";
 }
 
@@ -76,6 +76,7 @@ header a:hover {
     background-size: cover;
     background-position: center;
     border-bottom: 5px solid #000000;
+    padding: 25px;
 }
 
 .banner #intro {
@@ -83,10 +84,10 @@ header a:hover {
     border-radius: 25px;
     font-size: 1.5rem;
     text-align: center;
-    height: 250px;
+    height: 50vh;
     width: 50%;
     margin: auto;
-    margin-top: 125px;
+    margin-top: 15vh;
     background-color: #d1f7ff;
     opacity: .75;
     display: flex;
@@ -94,14 +95,28 @@ header a:hover {
     justify-content: center;
 }
 
+/*Feature Section*/
+.feature {
+    grid-area: feat;
+    border: 5px solid #000000;
+    text-align: center;
+}
+
+.feature .about_exc {
+    border: 5px dotted #ff0000;
+    margin: 20vh 20vw;
+    padding: 10vh 10vw;
+}
+
 /*Main Section*/
 .main {
     grid-area: main;
     display: grid;
-    grid-template-rows: 300px 300px;
     grid-template-columns: repeat(3, 400px);
     justify-content: space-around;
     align-content: space-around;
+    gap: 20px;
+    margin: 25px;
 }
 
 .card {
@@ -129,16 +144,10 @@ header a:hover {
 
 }
 
-/*Feature Section*/
-.feature {
-    grid-area: feat;
-    border: 5px solid black;
-}
 
 /*Footer Section*/
 .footer {
     grid-area: ft;
 }
-
 
 
