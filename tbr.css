@@ -4,19 +4,9 @@
     box-sizing: border-box;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    "header  header  header  header"
-    "banner  banner  banner  banner"
-    "main    main    main    main"
-    "feature feature feature feature"
-    "footer  footer  footer  footer";
-}
-/*Header Section*/
-.header{
-    grid-area: header;
+/*Header section*/
+.header {
+    grid-area: hd;
     position: fixed;
     height: 100px;
     width: 100%;
@@ -61,24 +51,4 @@ header a:visited {
 header a:hover {
     text-decoration: underline;
     color: #8688f9;
-}
-
-/*Banner Section*/
-.banner{
-    grid-area: banner;
-}
-
-/*Main Section*/
-.main{
-    grid-area: main;
-}
-
-/*Feature Section*/
-.feature{
-    grid-area: feature;
-}
-
-/*Footer Section*/
-.footer{
-    grid-area: footer;
 }
