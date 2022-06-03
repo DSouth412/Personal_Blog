@@ -186,6 +186,14 @@ header a:hover {
 }
 
 @media (min-width: 501px) and (max-width: 900px) {
+    .container {
+        grid-template-areas: 
+        "hd hd"
+        "banr banr"
+        "feat feat"
+        "main main"
+        "ft ft";
+    }
     .card {
         flex-basis: 40vw;
     }

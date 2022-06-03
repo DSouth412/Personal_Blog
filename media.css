@@ -1,0 +1,25 @@
+@media (max-width: 500px) {
+    .container {
+        grid-template-areas: 
+        "hd"
+        "banr"
+        "feat"
+        "main"
+        "ft";
+    }
+    .banner #intro  {
+        margin-top: 10vh;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .card {
+        flex-basis: 45vw;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+    .card {
+        flex-basis: 40vw;
+    }
+}
