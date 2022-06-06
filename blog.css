@@ -49,12 +49,21 @@
     text-align: center;
 }
 
+.feature img {
+    width: 75%;
+}
+
+.feature h3 {
+    margin: 2vh;
+}
+
 .feature .about_exc {
     border: 5px dotted #d1f7ff;
     background-color: #000000;
     color: #ffffff;
-    margin: 10vh 10vw;
-    padding: 10vh 10vw;
+    line-height: 2;
+    margin: 5vh 10vw;
+    padding: 5vh 10vw;
 }
 
 /*Main Section*/
@@ -64,8 +73,8 @@
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: space-around;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .card {
@@ -109,16 +118,22 @@
         "ft";
     }
     #navbar li {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     .banner #intro  {
         margin-top: 10vh;
+    }
+    .feature img {
+        width: 100%;
     }
     .main {
         flex-direction: column;
     }
     .card {
         flex-basis: 50vw;
+    }
+    .card h2 {
+        font-size: 5vw;
     }
 }
 
