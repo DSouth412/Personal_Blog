@@ -1,5 +1,4 @@
 @import url("header.css");
-@import url("media.css");
 @import url("footer.css");
 
 * {
@@ -8,51 +7,26 @@
     box-sizing: border-box;
 }
 
-/*Header section*/
-/*.header {
-    grid-area: hd;
-    position: fixed;
-    height: 100px;
-    width: 100%;
-    border-bottom: 5px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000000;
-    z-index: 10;
+body {
+    font-family: 'Merriweather', Georgia, serif;
+    background-color: #d1d2ff;
+    font-size: 16px;
 }
 
-#logo img {
-    height: 100px;
-    width: 150px;
-    overflow: hidden;
-    display: flex;
-    align-content: flex-end;
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+      grid-template-areas: 
+      "hd   hd    hd    hd"
+      "feat intro intro intro"
+      "feat main  main  main"
+      "ft   ft    ft    ft";
 }
 
-#navbar {
-    margin-right: 10px;
-    display: flex;
-    justify-content: end;
-}
+/*Header Section*/
 
-#navbar li {
-    display: inline;
-    list-style: none;
-    margin: 0.5em;
-}
+/*Feature Section*/
 
-header a:link {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-}
 
-header a:visited {
-    color: #ffffff;
-}
 
-header a:hover {
-    text-decoration: underline;
-    color: #8688f9;
-}*/
+/*Intro Section*/
