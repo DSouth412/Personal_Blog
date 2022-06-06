@@ -1,3 +1,7 @@
+@import url("header.css");
+@import url("media.css");
+@import url("footer.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +9,7 @@
 }
 
 /*Header section*/
-.header {
+/*.header {
     grid-area: hd;
     position: fixed;
     height: 100px;
@@ -51,4 +55,4 @@ header a:visited {
 header a:hover {
     text-decoration: underline;
     color: #8688f9;
-}
+}*/
