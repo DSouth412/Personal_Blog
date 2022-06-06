@@ -1,18 +1,6 @@
+@import url("foundation.css");
 @import url("header.css");
 @import url("footer.css");
-@import url("media.css");
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Merriweather', Georgia, serif;
-    background-color: #d1d2ff;
-    font-size: 16px;
-}
 
 .container {
     display: grid;
