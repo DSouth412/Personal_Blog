@@ -5,7 +5,8 @@
 .container {
     display: grid;
     grid-template-columns: repeat(4, auto);
-      grid-template-areas: 
+    grid-template-rows: 100px 500px 500px 400px;
+    grid-template-areas: 
       "hd   hd    hd    hd"
       "feat intro intro intro"
       "feat main  main  main"
@@ -19,3 +20,5 @@
 
 
 /*Intro Section*/
+
+/*Footer Section*/

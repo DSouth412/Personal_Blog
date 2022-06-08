@@ -1,3 +1,40 @@
 .footer {
     grid-area: ft;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.footer #ft-img {
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.footer .ft-links {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .subs {
+    background-color: blue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer form {
+    margin: 2vh;
+    padding: 5vh;
+    background-color:coral;
+    border-radius: 25px;
+
+}
+
+.footer .socials {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
 }
