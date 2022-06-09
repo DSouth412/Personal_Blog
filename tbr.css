@@ -2,23 +2,33 @@
 @import url("header.css");
 @import url("footer.css");
 
+
 .container {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: 100px 500px 500px 400px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 100px repeat(3, auto);
     grid-template-areas: 
-      "hd   hd    hd    hd"
-      "feat intro intro intro"
-      "feat main  main  main"
-      "ft   ft    ft    ft";
+    "hd   hd   hd   hd"
+    "feat intro intro intro"
+    "feat main main main"
+    "ft   ft   ft   ft";
 }
 
-/*Header Section*/
+/*Header Section
 
 /*Feature Section*/
-
-
+.feature {
+  grid-area: feat;
+}
 
 /*Intro Section*/
+.intro {
+  grid-area: intro;
+}
+
+/*Main Section*/
+main {
+  grid-area: main;
+}
 
 /*Footer Section*/
