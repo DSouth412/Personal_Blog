@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Merriweather', Georgia, serif;
-    background-color: #d1d2ff;
+    /*background-color: #d1d2ff;*/
+    background-image: linear-gradient(to right, #77e1f6 5%, #9395f8, #ffd1fd);
     font-size: 16px;
 }
