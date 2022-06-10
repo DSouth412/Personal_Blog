@@ -4,6 +4,7 @@
     color: #ffffff;
     display: flex;
     flex-flow: column wrap;
+    width: 100%;
 }
 
 #ft-img {
@@ -22,7 +23,7 @@
 form {
     margin: 2vh;
     padding: 5vh;
-    background-image: linear-gradient(to right, #77e1f6 5%, #9395f8, #ffd1fd);
+    background-image: linear-gradient(to right, #77e1f6, #9395f8, #ffd1fd);
     border-radius: 2em;
 
 }
@@ -81,6 +82,10 @@ input {
 
 .ft-links a:visited {
     color: #ffffff;
+}
+
+.ft-links a:hover {
+   color: #8688f9;
 }
 
 .socials {

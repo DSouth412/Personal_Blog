@@ -5,30 +5,104 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100px repeat(3, auto);
     grid-template-areas: 
-    "hd   hd   hd   hd"
+    "hd   hd    hd    hd"
     "feat intro intro intro"
-    "feat main main main"
-    "ft   ft   ft   ft";
+    "main main  main  main"
+    "ft   ft    ft    ft";
 }
 
 /*Header Section
+  Imported*/
 
 /*Feature Section*/
 .feature {
   grid-area: feat;
+  border-right: 3px solid #000000;
+  padding-top: 2vh;
+  padding-bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature h3 {
+  text-align: center;
+  margin: 2vh;
+  font-size: 1.25em;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.feature li {
+  list-style: none;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.225;
+}
+
+.feature a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.feature a:visited {
+  color: #6b26f4;
+}
+
+.feature a:hover {
+  color: #8688f9;
+  text-decoration: underline;
+}
+
+hr {
+  width: 75%;
+  margin: 2vh auto;
+  border: 2px solid #000000;
 }
 
 /*Intro Section*/
 .intro {
   grid-area: intro;
+  text-align: center;
+  font-size: 3vw;
 }
 
 /*Main Section*/
 main {
   grid-area: main;
+  background-color: coral;
 }
 
-/*Footer Section*/
+/*Footer Section
+  Imported*/
+
+/*Media Queries*/
+@media (max-width: 500px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "hd"
+    "feat"
+    "intro"
+    "main"
+    "ft";
+  }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+  .container {
+    display: grid;
+
+  .feature h3 {
+    font-size: 1.125em;
+  }
+  .feature li {
+   font-size: .875em;
+  }
+}

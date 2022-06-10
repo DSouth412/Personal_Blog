@@ -5,6 +5,7 @@
 .container {
     display: grid;
     grid-template-columns: repeat(4, auto);
+    grid-template-rows: 100px repeat(4, auto);
       grid-template-areas: 
       "hd   hd   hd   hd"
       "banr banr banr banr"
@@ -13,7 +14,8 @@
       "ft   ft   ft   ft";
 }
 
-/*Header section*/
+/*Header section
+    Imported*/
 
 /*Banner Section*/
 .banner {
@@ -22,7 +24,9 @@
     background-size: cover;
     background-position: center;
     border-bottom: 5px solid #000000;
-    padding: 10vh 10vw;
+    padding: 10vh;
+    display: flex;
+    align-items: center;
 }
 
 .banner #intro {
@@ -32,8 +36,8 @@
     text-align: center;
     height: 75%;
     width: 75%;
-    margin: auto;
-    margin-top: 10vh;
+    margin: 0 auto;
+    padding: 10vh 1vw;
     background-color: #d1f7ff;
     opacity: .75;
     display: flex;
@@ -120,8 +124,10 @@
     margin-right: 1.5vw;
 }
 
-/*Footer Section*/
+/*Footer Section
+    Imported*/
 
+/*Media Queries*/
 @media (max-width: 500px) {
     .container {
         grid-template-columns: auto;
@@ -135,8 +141,8 @@
     #navbar li {
         font-size: 3.5vw;
     }
-    .banner #intro  {
-        margin-top: 8vh;
+    #intro h1 {
+        font-size: 8vw;
     }
     .feature img {
         width: 100%;
@@ -155,6 +161,7 @@
     }
     .card p {
         margin-top: 1.5vh;
+        font-size: 1em;
     }
 }
 
