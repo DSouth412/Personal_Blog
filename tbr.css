@@ -88,13 +88,16 @@ main {
 
 .book_wtr {
   display: flex;
-  margin : 5vh 5vw;
+  margin: 5vh;
+  align-items: center;
+  justify-content:space-around;
 }
 
 .book_wtr img {
   width: 300px;
   height: 300px;
   border: 1px solid #000000;
+  margin-right: 1vw;
 }
 
 .scion {
@@ -114,15 +117,44 @@ em {
   font-weight: bold;
 }
 
+.book_info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2vh 5vw;
+  border: 1px solid #808080;
+  border-radius: 1em;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+p {
+
+}
+
 .author {
   display: flex;
+  background-color: #ffd1fd;
+  border-radius: 2em;
+  padding: 5vh 5vw;
+  margin: 5vh 20vw;
+  align-items: center;
+  text-align: center;
 }
 .author img {
   border: 2px solid #000000;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
+  margin-right: 2vw;
 }
+
+.author p {
+  margin: 1vh;
+}
+
+
 /*Footer Section
   Imported*/
 
@@ -137,6 +169,10 @@ em {
     "main"
     "feat"
     "ft";
+  }
+  .book_wtr {
+    display: flex;
+    flex-direction: column;
   }
   .feature {
     border-bottom: 3px solid #000000;
