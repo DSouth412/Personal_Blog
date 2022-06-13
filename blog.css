@@ -39,7 +39,7 @@
     margin: 0 auto;
     padding: 10vh 1vw;
     background-color: #d1f7ff;
-    opacity: .75;
+    opacity: .8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +83,7 @@
 .card {
     border: 3px solid black;
     border-radius: 10px;
-    background-color: #d1f7ff;
+    background-color: #9395f8;
     flex-basis: 25vw;
     margin: 2vh;
     padding-bottom: 1vh;
