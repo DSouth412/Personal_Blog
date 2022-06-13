@@ -140,6 +140,24 @@ p {
   font-size: .925em;
 }
 
+.source {
+  text-align: center;
+  background-color: #9395f8;
+  margin: 0 20vw;
+  border-radius: 1em;
+}
+
+.source a:link {
+  color: #000000;
+  font-weight: bold;
+}
+.source a:visited {
+  color: #000000;
+}
+.source a:hover {
+  color: #ffffff;
+}
+
 .author {
   display: flex;
   background-color: #ffd1fd;
