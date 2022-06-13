@@ -2,9 +2,6 @@
 @import url("header.css");
 @import url("footer.css");
 
-body {
-  background-image:none;
-}
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -70,18 +67,61 @@ hr {
 /*Intro Section*/
 .intro {
   grid-area: intro;
-  text-align: center;
-  font-size: 3vw;
+  margin: auto 5vw;
 }
 
-.intro {
-
+.blurb {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 2em;
+  text-align: center;
+  font-size: 2vw;
+  line-height: 2;
+  padding: 2vh 5vw;
 }
 
 /*Main Section*/
 main {
   grid-area: main;
-  background-color: coral;
+  border-top: 3px solid #000000;
+}
+
+.book_wtr {
+  display: flex;
+  margin : 5vh 5vw;
+}
+
+.book_wtr img {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000000;
+}
+
+.scion {
+  width: 300px;
+}
+
+figcaption {
+  background-color: #ffd1fd;
+  border: 0.5px solid #808080;
+  border-radius: 1em;
+  color:#000000;
+  font-size: .8em;
+  text-align: center;
+}
+
+em {
+  font-weight: bold;
+}
+
+.author {
+  display: flex;
+}
+.author img {
+  border: 2px solid #000000;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 /*Footer Section
   Imported*/
