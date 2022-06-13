@@ -8,6 +8,7 @@ body {
     font-family: 'Merriweather', Georgia, serif;
     background-image: linear-gradient(to right, #77e1f6 5%, #9395f8, #ffd1fd);
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     font-size: 16px;
 }
